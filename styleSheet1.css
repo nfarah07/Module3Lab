@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: cursive, sans-serif;
+}
+/*this body and header is used to seperate the font betwen the header tabs and the pages contents*/
+body {
+    height:10px;
+    background-image: url(images.jpeg);
+    background-repeat: no-repeat;
+    background-size: 1014px  1229px;
+    background-color: #C5E3BF; 
+    color:black;
+    font-size: larger;
+    
+
+}
+header {
+    background-color: #9BC4E2;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); 
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*Move to the right a little*/
+     padding-left: 90px ;
+     padding-right: 275px;
+}
+header nav h1{
+    font-size: 28px;
+    font-weight: 600;
+    color:#506987;
+}
+header nav .tabs{
+    list-style-type: none;
+    display:flex;
+    justify-content: flex-end;
+}
+
+header nav .tabs .tab{
+    display: block;
+}
+
+header nav .tabs .tab a[data-switcher]{
+    display: block;
+    padding:15px 30px; 
+    text-decoration: none;
+    color:#FFF;
+    background-color: #8FBC8F;
+    cursor: pointer;
+
+}
+header nav .tabs .tab:hover a[data-switcher]{
+    background-color: #EEEED1;
+
+}
+
+header nav .tabs .tab.is-active a[data-switcher]{
+    background-color:  #EEEED1;
+    font-weight: 700;
+}
+/*Now for the look of the content page*/
+
+main{
+    padding-left: 90px;
+    padding-right: 275px;
+}
+.pages{
+    margin-top: 50px;
+    width: 500;
+    height: 1120px;
+    padding:50px 25px ;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+.pages .page{
+    display:none;
+}
+.pages .page.is-active{
+    display: contents;
+    color:#949494;
+    background-color:   #9BC4E2;
+}
+
+
+footer{
+
+    background-size: 10px;
+    padding-left: 90px;
+    padding-right: 275px;
+    
+    background-color:  #607B8B;
+    font-weight: 700;
+    
+
+}
+
+.image1{
+    width: 150px;
+
+}
+.image2{
+    height: 150px;
+    width: 150px;
+
+}
+el{
+    font-size: larger;
+    color:black;
+    background-color: #EEEED1;
+}
+#e{
+    font-size: larger;
+    color:black;
+    background-color: #748269;
+}
+#p{
+    font-size: larger;
+    color:black;
+    background-color: #748269;
+}
+#b{
+    font-size: larger;
+    color:black;
+    background-color: #748269;
+}
+h7{
+    font-size: larger;
+    color:black;
+    background-color: #748269;
+}
+
+#addCart{
+    width: 150px;
+    height: 69px;
+    top:450px;
+    right: 95px;
+
+    margin: auto;
+    position: absolute;
+    left: 1500ppx;
+    bottom: 95px;
+    
+
+}
+
+.cartImg{
+    width:25px ;
+    Height:26px;
+}
+
+#ItemsSelected{
+    background-color:#EEEED1;
+    width: auto;
+
+}
+

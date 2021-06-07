@@ -1,0 +1,101 @@
+<!Doctype HTML>
+<HTML>
+
+<head>
+    <title>LifeGrocery.ca</title>
+    <link rel="stylesheet" type="text/css" href="styleSheet1.css">
+
+</head>
+
+<body>
+    <!--Hooks up our javascript-->
+    <script src="Groceryreact.js"></script>
+    <script src="product.js"></script>
+    <header>
+        <nav>
+            <h1>Life Improvement Grocery store</h1>
+            <ul class="tabs">
+                <!--Is-active for the first page that is loaded or ON-->
+                <li class="tab is-active">
+                    <a data-switcher data-tab="1">Customer</a>
+                </li>
+                <li class="tab">
+                    <a data-switcher data-tab="2">Products</a>
+                </li>
+                <li class="tab">
+                    <a data-switcher data-tab="3">Cart</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pages">
+            <!--Creating space content for the page clicker-->
+            <div class="page is-active" data-page="1">
+                <h2>Customer</h2>
+                <br>
+                <el>Please choose the type of food restrictions you would like to filter</el>
+                <br><br>
+
+                <img class= "image1" src="download1.jpeg" alt="error"> OR 
+                <img class= "image2" src="Nut-free.jpeg" alt="error">
+                <br><br>
+
+
+                <h7>Note: Only one choice can be selected</h7>
+                <br>
+
+                <div id="b">
+                    <input type="radio" id="e" name="choice" value="lactose-free" onchange=" populateListProductChoices(this.value,'displayProduct')">
+                    <label for="e">Lactose-free</label><br>
+             
+                    <input type="radio" id="p" name="choice" value="nuts-free" onchange="populateListProductChoices(this.value,'displayProduct')">
+                    <label for="phone">Nuts-free</label><br>
+             
+                    <input type="radio" id="m" name="choice" value="None" onchange="populateListProductChoices(this.value,'displayProduct')">
+                    <label for="m">None</label>
+                </div>
+            </div>
+            <div class="page" data-page="2">
+                <h2>Products</h2>
+
+                <br><el>Please select the items you would like to purchase</el>
+                <br><br>
+                
+                <div id="displayProduct"></div>
+                <br>
+                <button id="addCart" type="button" class="block">
+                    <br>
+                    <h3>Add selected items to cart.</h3>
+                    <br>
+                    <img class="cartImg" src="cart.jpeg" alt="">
+                </button>
+
+
+            </div>
+            <div class="page" data-page="3">
+
+                <h2>Cart</h2>
+                <br>
+                <!--This is how javascript will communicate with html-->
+                <el>Items selected:
+                    <br><br>
+                    <p id="ItemsSelected"></p>
+                </el>
+                <br><br>
+                <!--<p id="ItemsSelected"></p>-->
+                <br>
+                <div id="displayCart"></div>
+
+            </div>
+            
+        </section>
+    </main>
+
+
+</body>
+<br>
+
+</HTML>
+
+<footer><h4>Created by: Soul foods</h4></footer>
